@@ -15,7 +15,7 @@ export default function Home() {
 
   async function getProductos(){
     const {data} = await supabase.from("productos").select()
-    setProducts(data)
+    //setProducts(data)
   }
 
   const {codigo, descriccion, precio, stock} = product
